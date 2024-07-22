@@ -21,6 +21,9 @@ const tourPackageSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    packages: {
+        type: [String],
+    },
     duration: {
         type: Number, // Duration in days
         required: true,
