@@ -6,9 +6,9 @@ const packageSchema = new mongoose.Schema({
     //     ref: 'User',
     //     required: true,
     // },
-    // tourPackage: {
+    // Destination: {
     //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: 'TourPackage',
+    //     ref: 'Destination',
     //     required: true,
     // },
     price: {

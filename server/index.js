@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
 import cors from "cors"
 import authRoute from "./routes/authRoute.js"
-import tourPackage from "./routes/tourPackage.js"
+import destination from "./routes/Destination.js"
 import packages from "./routes/packageRoute.js"
 import user from "./routes/users.js"
 
@@ -31,7 +31,7 @@ app.use(cookieParser());
 
 // routes
 app.use("/api/auth", authRoute)
-app.use("/api/tour", tourPackage)
+app.use("/api/destination", destination)
 app.use("/api/package", packages)
 app.use("/api/user", user);
 
