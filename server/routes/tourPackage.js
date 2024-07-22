@@ -3,10 +3,11 @@ import { createTour, deleteTour, getAllTours, getTour, updateTour } from "../con
 import { verifyAdmin } from "../middlewares/verifyToken.js";
 const router = express.Router();
 
-router.post("/createTour",verifyAdmin, createTour);
-router.put("/updateTour/:id",verifyAdmin, updateTour);
-router.delete("/deleteTour/:id",verifyAdmin, deleteTour);
-router.get("/getTour/:id", getTour);
-router.get("/getAllTours", getAllTours);
+router.post("/",verifyAdmin, createTour);
+router.put("/:id",verifyAdmin, updateTour);
+router.delete("/:id",verifyAdmin, deleteTour);
+router.get("/:id", getTour);
+router.get("/", getAllTours);
+
 
 export default router;

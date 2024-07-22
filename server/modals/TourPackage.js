@@ -25,10 +25,19 @@ const tourPackageSchema = new mongoose.Schema({
         type: Number, // Duration in days
         required: true,
     },
+    rating: {
+        type: Number,
+        min: 0,
+        max: 5,
+    },
     availableDates: [{
         type: Date,
         required: true,
     }],
+    featured: {
+        type: Boolean,
+        default: false,
+    },
 }, { timestamps: true });
 
 const TourPackage = mongoose.model('TourPackage', tourPackageSchema);
