@@ -1,45 +1,50 @@
-This is a full-stack web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. The application includes user authentication and an attractive UI built with TailwindCss.
+#### This is a full-stack web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. The application includes user authentication and an attractive UI built with TailwindCss.
 
-*Prerequisites*
-# Before you begin, ensure you have the following installed: #
-### Node.js (v14 or later) ###
-### npm (v6 or later) ###
-### MongoDB (local or cloud-based instance) ###
+#### *Prerequisites*
+### Before you begin, ensure you have the following installed: 
+#### Node.js (v14 or later) ###
+#### npm (v6 or later) ###
+#### MongoDB (local or cloud-based instance) ###
 
-# Getting Started #
-## Follow these instructions to set up and run the project locally. ##
+## Getting Started
+### Follow these instructions to set up and run the project locally.
 
-## Clone the Repository ##
-### git clone https://github.com/Anjali0048/Travel-Agency
-### cd Travel-Agency
+### Clone the Repository ##
+git clone https://github.com/Anjali0048/Travel-Agency 
 
-## Set Up the Backend
-### cd server
+cd Travel-Agency
 
-## Install dependencies:
-### npm install
+### Set Up the Backend
 
-## Create a .env file:
-### touch .env
+cd server
 
-## Add the following environment variables to the .env file:
-### PORT=3000
-### MONGODB_URI=your_mongodb_uri
-### JWT_SECRET=your_jwt_secret
+#### Install dependencies:
+npm install
 
-## Start the backend server:
-### npm start
+#### Create a .env file:
+touch .env
 
-# Set Up the Frontend
+#### Add the following environment variables to the .env file:
 
-## Navigate to the client directory:
-### cd ../client
+PORT=3000
 
-## Install dependencies:
-### npm install
+MONGODB_URI=your_mongodb_uri
 
-## Start the frontend development server:
-### npm start
+JWT_SECRET=your_jwt_secret
+
+#### Start the backend server:
+npm start
+
+### Set Up the Frontend
+
+#### Navigate to the client directory:
+cd ../client
+
+#### Install dependencies:
+npm install
+
+#### Start the frontend development server:
+npm start
 
 
 
