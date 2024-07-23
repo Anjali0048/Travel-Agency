@@ -11,7 +11,7 @@ import user from "./routes/users.js"
 const app = express();
 dotenv.config();
 
-const PORT = process.env.PORT || 8800;
+const PORT = process.env.PORT || 8000;
 
 // database connection
 mongoose.connect(process.env.MONGO_URL)

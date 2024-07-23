@@ -31,8 +31,6 @@ export const signup = async (req,res,next) => {
             httpOnly:true,
             // secure:true
         })
-        // console.log("cookie : ", cookie)
-        
         await newUser.save();
         console.log("User Created Successfully")
         res.status(200).send("User Created Successfully")
