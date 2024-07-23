@@ -24,19 +24,19 @@ export const signup = async (req,res,next) => {
         console.log("newUser :", newUser);
 
         const token = await newUser.generateAuthToken();
-        // console.log(token)
+        console.log("token : ", token)
+        
         res.cookie("jwt",token,{
             // expires:new Date(Date.now() + 10000),
             httpOnly:true,
             // secure:true
         })
-        // console.log(cookie)
-
         await newUser.save();
         console.log("User Created Successfully")
         res.status(200).send("User Created Successfully")
     } 
     catch (err) {
+        console.error("Error during signup:", err);
         return next(createError(500, "User cannot be registered"))
     }
 }
