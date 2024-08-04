@@ -67,7 +67,7 @@ const Dashboard = ({userDetails}) => {
       <div className="flex flex-wrap  p-4 bg-gray-100 justify-between">
       {
         data.map((item) => {
-            return <FeaturedDestinationCard key={item._id} item={item} />
+              return item.featured ? <FeaturedDestinationCard key={item._id} item={item} /> : null
         })
       }
       </div>
